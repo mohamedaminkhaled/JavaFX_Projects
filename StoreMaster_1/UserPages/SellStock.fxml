@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="addStockPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="220.0" prefWidth="490.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SellStockController">
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="490.0" spacing="5.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <children>
+            <Circle fill="#ff321f" onMouseClicked="#close" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane prefHeight="123.0" prefWidth="490.0" BorderPane.alignment="CENTER">
+         <center>
+            <Pane prefHeight="129.0" prefWidth="490.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="87.0" layoutY="54.0" prefHeight="33.0" prefWidth="46.0" text="الكميه">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="quantity" layoutX="145.0" layoutY="32.0" prefHeight="63.0" prefWidth="72.0" style="-fx-background-color: #C0C0C0;">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="-2.0" right="-2.0" />
+                     </padding>
+                  </TextField>
+                  <Line endX="-30.0" layoutX="246.0" layoutY="76.0" startX="-100.0" />
+                  <Label layoutX="274.0" layoutY="49.0" prefHeight="42.0" prefWidth="43.0" text="السعر">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfCustomPrice" layoutX="324.0" layoutY="32.0" prefHeight="63.0" prefWidth="53.0" style="-fx-background-color: #C0C0C0;">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="-2.0" right="-2.0" />
+                     </padding>
+                  </TextField>
+                  <Line endX="-51.0" layoutX="425.0" layoutY="76.0" startX="-100.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="95.0" prefWidth="490.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#confirmSellStock" prefHeight="41.0" prefWidth="201.0" style="-fx-background-color: #ad8017;" text="Add to cart" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <effect>
+      <InnerShadow choke="0.5" height="30.0" radius="14.5" width="30.0" />
+   </effect>
+</BorderPane>

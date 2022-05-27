@@ -1,0 +1,110 @@
+
+#icon_close, #icon_fullscreen, #icon_iconize:hover{
+	-fx-cursor:hand;
+}
+
+.button:hover{
+	-fx-cursor:hand;
+}
+
+#hboxDashboard:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hBoxAddCompany:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxViewSuppliers:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxViewCompanies:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hBoxAddSupplier:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hBoxAddMedicine:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxViewSales:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxRegisterUser:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxModifyUser:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxViewUsers:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxGetLog:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxExitApp:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxAddMedicine:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxViewMedicine:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxBackup:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxRestore:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#datepickerManufact .text-field {
+    -fx-control-inner-background:  #C0C0C0 ;
+}
+
+#datepickerExpire .text-field {
+    -fx-control-inner-background:  #C0C0C0 ;
+}
+
+#datepickerBatch .text-field {
+    -fx-control-inner-background:  #C0C0C0 ;
+}
+
+#tfSearch{
+	-fx-border-radius: 10px;
+	-fx-background-color: rgb(212,212,212);
+}
+
+#btnSearch{
+	-fx-border-radius: 10px;
+	-fx-background-color: #2E8B57;
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="addStockPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="220.0" prefWidth="490.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SellStockController">
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="1100.0" spacing="5.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fx:id="icon_close" fill="#f80303" glyphName="CLOSE" lineSpacing="10.0" onMouseClicked="#close" size="22" wrappingWidth="26.428571701049805" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane prefHeight="123.0" prefWidth="490.0" BorderPane.alignment="CENTER">
+         <center>
+            <Pane prefHeight="129.0" prefWidth="490.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="60.0" layoutY="41.0" prefHeight="42.0" prefWidth="103.0" text="Quantity:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="quantity" layoutX="163.0" layoutY="31.0" prefHeight="63.0" prefWidth="72.0" style="-fx-background-color: #C0C0C0;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="-30.0" layoutX="264.0" layoutY="75.0" startX="-100.0" />
+                  <Label layoutX="272.0" layoutY="42.0" prefHeight="42.0" prefWidth="56.0" text="Unit">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboUnits" layoutX="328.0" layoutY="47.0" prefHeight="21.0" prefWidth="135.0" promptText="Choos unit" style="-fx-font-size: 14;" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="95.0" prefWidth="490.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#confirmSellStock" prefHeight="41.0" prefWidth="201.0" style="-fx-background-color: #ad8017;" text="Add to cart" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <effect>
+      <InnerShadow choke="0.5" height="30.0" radius="14.5" width="30.0" />
+   </effect>
+</BorderPane>

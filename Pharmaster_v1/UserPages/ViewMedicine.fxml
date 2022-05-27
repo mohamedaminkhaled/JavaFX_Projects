@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneSearch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="900.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchMedicineController">
+   <top>
+      <HBox fx:id="hboxTop" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="datePickerSearch" onKeyPressed="#enterSearchDate" prefHeight="46.0" prefWidth="222.0" promptText="Search by date" style="-fx-font-size: 20;" visible="false" />
+            <TextField fx:id="tfSearch" onKeyPressed="#enterSearch" onKeyTyped="#typeSearch" prefHeight="44.0" prefWidth="260.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnSearch" mnemonicParsing="false" onMouseClicked="#serchMedicine" prefHeight="43.0" prefWidth="94.0" style="-fx-background-color: DarkCyan;" text="Search" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBills" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#getViewBills" prefHeight="43.0" prefWidth="111.0" style="-fx-background-color: DarkRed;" text="View Bills" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnBack" mnemonicParsing="false" onMouseClicked="#backToMedicines" prefHeight="43.0" prefWidth="64.0" style="-fx-background-color: DarkSlateGray;" text="Back" textFill="#fffbfb" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" prefHeight="463.0" prefWidth="845.0" style="-fx-background-color: lightblue; -fx-font-size: 20px;" BorderPane.alignment="CENTER">
+         <content>
+            <FlowPane fx:id="flowPaneContent" hgap="30.0" prefHeight="537.0" prefWidth="824.0" style="-fx-background-color: lightgray;" vgap="30.0">
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+            </FlowPane>
+         </content>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ScrollPane>
+   </center>
+</BorderPane>

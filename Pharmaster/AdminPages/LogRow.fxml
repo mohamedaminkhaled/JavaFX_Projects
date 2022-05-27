@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="778.0" style="-fx-background-color: PaleTurquoise;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogRowController">
+   <effect>
+      <InnerShadow color="#098ab2" />
+   </effect>
+   <center>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="employeeName" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: LightBlue;" text="محمد امين عبد العليم خالد">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="login" prefHeight="34.0" prefWidth="272.0" style="-fx-background-color: LightGray;" text="2020-06-25 12:28:26 PM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="logout" prefHeight="34.0" prefWidth="272.0" style="-fx-background-color: Lavender;" text="2020-06-25 08:28:26 AM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

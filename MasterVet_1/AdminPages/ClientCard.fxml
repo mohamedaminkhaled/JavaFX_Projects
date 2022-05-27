@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="BorderPaneMedicineCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="383.0" style="-fx-background-color: DarkSlateGrey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClientCardController">
+   <left>
+      <StackPane prefHeight="95.0" prefWidth="117.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="ClientImage" fitHeight="112.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/avatar2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </StackPane>
+   </left>
+   <center>
+      <Pane prefHeight="187.0" prefWidth="266.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="name" layoutX="-1.0" layoutY="8.0" prefHeight="32.0" prefWidth="261.0" text="---------------------------------" textFill="#a2d1f8">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="47.0" prefHeight="25.0" prefWidth="53.0" text="Phone:" textFill="#14f551">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="phone" layoutX="69.0" layoutY="47.0" prefHeight="25.0" prefWidth="141.0" text="01000006645" textFill="#fcb0b0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="96.0" prefHeight="25.0" prefWidth="50.0" text="Debit::" textFill="#ff3300">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="loan" layoutX="69.0" layoutY="96.0" prefHeight="25.0" prefWidth="142.0" text="0000000.00" textFill="#fcb0b0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="-1.0" layoutY="72.0" prefHeight="25.0" prefWidth="65.0" text="Balance:" textFill="#14f551">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="balance" layoutX="69.0" layoutY="72.0" prefHeight="25.0" prefWidth="141.0" text="0000000.00" textFill="#fcb0b0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+   <effect>
+      <InnerShadow choke="0.24" color="#3dbad0" height="20.0" radius="9.5" width="20.0" />
+   </effect>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="383.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#getClientReport" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: MidnightBlue;" text="Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="45.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#getModifyClient" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: LightSeaGreen;" text="Modify Client" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#getDeleteClient" prefHeight="22.0" prefWidth="74.0" style="-fx-background-color: Crimson;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="-30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="58.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

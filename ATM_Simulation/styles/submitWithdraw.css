@@ -1,0 +1,13 @@
+
+.root{
+	-fx-background-color:rgb(51,104,101);
+}
+
+Button{
+	-fx-background-color:rgb(153,204,204);
+}
+
+TextField{
+	-fx-background-color: rgb(215,220,218);
+	-fx-font-size: 18px;
+}

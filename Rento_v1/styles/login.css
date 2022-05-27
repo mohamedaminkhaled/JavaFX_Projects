@@ -1,0 +1,23 @@
+
+.root{
+	-fx-background-image:url('land_3.JPG');
+}
+
+#exit:hover{
+	-fx-text-fill: red;
+	-fx-cursor:hand;
+}
+
+#btn_submit{
+	-fx-background-color: black;
+}
+
+#btn_submit:hover{
+	-fx-background-color: #262626;
+	-fx-cursor:hand;
+}
+
+#tf_username, #tf_passwoard{
+	-fx-background-color: transparent;
+	-fx-text-fill: white;
+}

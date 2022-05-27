@@ -1,0 +1,72 @@
+
+#icon_close, #icon_fullscreen, #icon_iconize:hover{
+	-fx-cursor:hand;
+}
+
+.button:hover{
+	-fx-cursor:hand;
+}
+
+#hboxDashboard:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxRegisterClient:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxRegisterGuarantor:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hBoxAddCar:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxViewClients:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxBackup:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxRestore:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#hboxLogout:hover{
+	-fx-cursor:hand;
+	-fx-background-color:rgb(63,63,63);
+}
+
+#datepickerManufact .text-field {
+    -fx-control-inner-background:  #C0C0C0 ;
+}
+
+#datePickerExit .text-field {
+    -fx-control-inner-background:  #C0C0C0 ;
+    -fx-font-size: 18px;
+}
+
+#datePickerReturn .text-field {
+    -fx-control-inner-background:  #C0C0C0 ;
+    -fx-font-size: 18px;
+}
+
+#tfSearch{
+	-fx-border-radius: 10px;
+	-fx-background-color: rgb(212,212,212);
+}
+
+#btnSearch{
+	-fx-border-radius: 10px;
+	-fx-background-color: #2E8B57;
+}

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="adminPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="750.0" prefWidth="1180.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="1180.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fx:id="icon_iconize" fill="#62ceee" glyphName="MINUS" lineSpacing="10.0" onMouseClicked="#min" size="22" text="" wrappingWidth="26.285715103149414" />
+            <FontAwesomeIconView fx:id="icon_fullscreen" fill="#f5c528" glyphName="CIRCLE" lineSpacing="10.0" onMouseClicked="#max" size="22" wrappingWidth="26.85714340209961" />
+            <FontAwesomeIconView fx:id="icon_close" fill="#f80303" glyphName="CIRCLE" lineSpacing="10.0" onMouseClicked="#close" size="22" wrappingWidth="26.428571701049805" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane fx:id="borderPaneContent" prefHeight="700.0" prefWidth="1120.0" BorderPane.alignment="CENTER">
+         <top>
+            <HBox prefHeight="78.0" prefWidth="1100.0" style="-fx-background-color: #2F4F4F;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="78.0" prefWidth="1102.0" style="-fx-background-color: #2F4F4F;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="916.0" layoutY="13.0" prefHeight="52.0" prefWidth="170.0" text="Admin" textAlignment="CENTER" textFill="#e8e0e0">
+                           <font>
+                              <Font name="System Bold Italic" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="49.0" layoutY="6.0" prefHeight="62.0" prefWidth="267.0" text="PHARMASTER" textFill="#f5e8e8">
+                           <font>
+                              <Font name="System Bold Italic" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="583.0" prefWidth="227.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="hboxDashboard" alignment="CENTER_LEFT" onMouseClicked="#setDashboard" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="30" />
+                        <Label prefHeight="46.0" prefWidth="130.0" text="Dashboard" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hboxRegisterUser" alignment="CENTER_LEFT" onMouseClicked="#getRegisterUser" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" size="30" />
+                        <Label prefHeight="51.0" prefWidth="151.0" text="Regester User" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hBoxAddCompany" alignment="CENTER_LEFT" onMouseClicked="#getAddCompany" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="30" />
+                        <Label prefHeight="49.0" prefWidth="152.0" text="Add Company" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hBoxAddSupplier" alignment="CENTER_LEFT" onMouseClicked="#getAddSupplier" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="30" />
+                        <Label prefHeight="49.0" prefWidth="152.0" text="Add Supplier" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hBoxAddMedicine" alignment="CENTER_LEFT" onMouseClicked="#getAddMedicine" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="30" />
+                        <Label prefHeight="49.0" prefWidth="152.0" text="Add Medicine" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hboxViewCompanies" alignment="CENTER_LEFT" onMouseClicked="#getViewCompanies" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="30" />
+                        <Label prefHeight="49.0" prefWidth="166.0" text="View Companies" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hboxViewSuppliers" alignment="CENTER_LEFT" onMouseClicked="#getViewSuppliers" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="30" />
+                        <Label prefHeight="49.0" prefWidth="152.0" text="View Suppliers" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hboxViewUsers" alignment="CENTER_LEFT" onMouseClicked="#getViewUsers" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="30" />
+                        <Label prefHeight="49.0" prefWidth="152.0" text="View Users" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hboxGetLog" alignment="CENTER_LEFT" onMouseClicked="#getSystemLog" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="30" />
+                        <Label prefHeight="49.0" prefWidth="152.0" text="System Log" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hboxBackup" alignment="CENTER" onMouseClicked="#backup" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="#bc3434" glyphName="DATABASE" size="30">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label prefHeight="51.0" prefWidth="157.0" text="Backup" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hboxRestore" alignment="CENTER" onMouseClicked="#restore" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="#24dd36" glyphName="DATABASE" size="30">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label prefHeight="51.0" prefWidth="157.0" text="Restore" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hboxExitApp" alignment="CENTER" onMouseClicked="#getLogOut" prefHeight="50.0" prefWidth="227.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="#fc0808" glyphName="CLOSE" size="30">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></FontAwesomeIconView>
+                        <Label prefHeight="51.0" prefWidth="157.0" text="Log Out" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Pane prefHeight="129.0" prefWidth="873.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="adminUsername" layoutX="40.0" layoutY="31.0" prefHeight="68.0" prefWidth="193.0" textFill="#3c22c9">
+                           <font>
+                              <Font name="System Bold Italic" size="46.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adminName" layoutX="233.0" layoutY="31.0" prefHeight="68.0" prefWidth="398.0" textFill="#3c22c9">
+                           <font>
+                              <Font name="System Bold Italic" size="46.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </top>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </center>
+   <effect>
+      <InnerShadow choke="0.5" color="#2c2a2a" height="30.0" radius="14.5" width="30.0" />
+   </effect>
+</BorderPane>

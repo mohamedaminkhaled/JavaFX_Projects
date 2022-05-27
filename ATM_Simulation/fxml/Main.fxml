@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet mainStyle.css?>
+
+<AnchorPane prefHeight="352.0" prefWidth="627.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.Mycontroller">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="lblHello" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="14.0" prefHeight="67.0" prefWidth="548.0" text="HELLO DEAR CUSTOMER" textAlignment="CENTER" textFill="#ccfff9">
+      <font>
+        <Font name="System Bold Italic" size="40.0" />
+      </font>
+    </Label>
+    <Label id="tfCardNumber" alignment="CENTER_RIGHT" layoutX="65.0" layoutY="126.0" prefHeight="32.0" prefWidth="209.0" text="Insert card number:" textFill="#eb99ff">
+      <font>
+        <Font name="System Italic" size="24.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label id="tfPIN" alignment="CENTER_RIGHT" font="$x2" layoutX="118.0" layoutY="195.0" prefHeight="27.0" prefWidth="156.0" text="Insert PIN:" textFill="#ff00e4" />
+    <TextField fx:id="tfCardNumber" layoutX="290.0" layoutY="121.0" prefHeight="37.0" prefWidth="209.0" />
+    <TextField fx:id="tfPIN" layoutX="290.0" layoutY="190.0" prefHeight="37.0" prefWidth="102.0" promptText="4-digits" />
+    <Label layoutX="283.0" layoutY="295.0" prefHeight="31.0" prefWidth="77.0" text="Number:" textFill="#ff7bf0">
+      <font>
+        <Font size="18.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Button fx:id="btnGenerate" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="65.0" layoutY="294.0" minHeight="31.0" mnemonicParsing="false" onAction="#controlGenerateCard" prefHeight="37.0" prefWidth="209.0" text="Generate Card &gt;&gt;">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Button>
+    <Label fx:id="lblCardNumber" font="$x3" layoutX="360.0" layoutY="299.0" prefHeight="27.0" prefWidth="151.0" text="" textFill="#ff99e2" />
+    <Label font="$x3" layoutX="507.0" layoutY="301.0" prefHeight="27.0" prefWidth="34.0" text="PIN:" textFill="#ff00b8" />
+    <Label fx:id="lblPIN" font="$x3" layoutX="550.0" layoutY="301.0" prefHeight="27.0" prefWidth="63.0" text="" textFill="#ff33f7" />
+    <Label fx:id="lblErrMain" layoutX="290.0" layoutY="249.0" prefHeight="32.0" prefWidth="274.0" text="" textFill="#ffb800">
+      <font>
+        <Font size="22.0" />
+      </font>
+    </Label>
+    <Button fx:id="btnSubmit" layoutX="413.0" layoutY="190.0" mnemonicParsing="false" onAction="#validateCard" prefHeight="32.000099999997474" prefWidth="86.0" text="Submit">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

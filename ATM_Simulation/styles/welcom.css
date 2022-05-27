@@ -1,0 +1,12 @@
+
+.root{
+	-fx-background-color:rgb(51,104,101);
+}
+
+lblWelcom{
+	-fx-text-fill: rgb(199,189,228);
+}
+
+Button{
+	-fx-background-color:rgb(179,211,211);
+}

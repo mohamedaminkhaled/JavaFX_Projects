@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneSearch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="646.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchSalesController">
+   <top>
+      <HBox fx:id="hboxTop" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="30.0" prefWidth="54.0" text="From">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="-10.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="dateFromSales" prefHeight="38.0" prefWidth="182.0" promptText="From date" style="-fx-font-size: 16;" />
+            <Label prefHeight="30.0" prefWidth="31.0" text="To">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="-10.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="dateToSales" prefHeight="38.0" prefWidth="182.0" promptText="To date" style="-fx-font-size: 16;" />
+            <Button fx:id="btnSearch" mnemonicParsing="false" onMouseClicked="#searchSalesReport" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: DarkCyan;" text="Search" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" prefHeight="463.0" prefWidth="646.0" style="-fx-background-color: lightblue; -fx-font-size: 20px;" BorderPane.alignment="CENTER">
+         <content>
+            <FlowPane fx:id="flowPaneContent" hgap="30.0" prefHeight="537.0" prefWidth="646.0" style="-fx-background-color: lightgray;" vgap="30.0">
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+            </FlowPane>
+         </content>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ScrollPane>
+   </center>
+</BorderPane>

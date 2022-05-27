@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneCompanyCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="193.0" prefWidth="384.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SupplierCardController">
+   <center>
+      <Pane prefHeight="175.0" prefWidth="185.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="supplierName" layoutX="11.0" prefHeight="32.0" prefWidth="252.0" text="----------------------------------------" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="71.0" prefHeight="14.0" prefWidth="72.0" text="Addres:" textFill="#ddff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="supplierAddress" layoutX="76.0" layoutY="74.0" prefHeight="20.0" prefWidth="180.0" text="-----------------------------------" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="104.0" prefHeight="9.0" prefWidth="73.0" text="Phone:" textFill="#e5ff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="supplierPhone" layoutX="69.0" layoutY="107.0" prefHeight="20.0" prefWidth="144.0" text="-----------------" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="135.0" prefHeight="25.0" prefWidth="49.0" text="Email:" textFill="#e1ff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="supplierEmail" layoutX="63.0" layoutY="135.0" prefHeight="25.0" prefWidth="203.0" text="----------------------------------" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="39.0" prefHeight="25.0" prefWidth="81.0" text="Company:" textFill="#ddff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="companyName" layoutX="94.0" layoutY="42.0" prefHeight="20.0" prefWidth="167.0" text="---------------------------" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+   <effect>
+      <InnerShadow choke="0.16" color="#979ca1" height="40.0" radius="19.5" width="40.0" />
+   </effect>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="245.0" prefWidth="113.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fx:id="supplierImage" fitHeight="87.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/avatar2.jpg" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onMouseClicked="#modifySupplier" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: MediumTurquoise;" text="Modify">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

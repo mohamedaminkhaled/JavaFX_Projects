@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="484.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label fx:id="exit" alignment="CENTER" layoutX="407.0" layoutY="7.0" onMouseClicked="#close" prefHeight="44.0" prefWidth="63.0" text="Exit" textFill="#0a4ef8">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="180.0" layoutY="158.0" prefHeight="80.0" prefWidth="158.0" text="Login" textFill="WHITE">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutY="350.0" prefHeight="40.0" prefWidth="158.0" text="passwoard" textFill="#eeecec">
+         <font>
+            <Font name="System Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutY="288.0" prefHeight="49.0" prefWidth="158.0" text="username" textFill="#f5f4f4">
+         <font>
+            <Font name="System Italic" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_username" alignment="CENTER" layoutX="181.0" layoutY="288.0" prefHeight="30.0" prefWidth="267.0" promptText="username">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="tf_passwoard" alignment="CENTER" layoutX="180.0" layoutY="344.0" prefHeight="25.0" prefWidth="267.0" promptText="passwoard">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btn_submit" layoutX="182.0" layoutY="452.0" mnemonicParsing="false" onKeyPressed="#enterLogin" onMouseClicked="#login" prefHeight="49.0" prefWidth="158.0" text="Login" textFill="#f8f7f0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Line endX="162.0" layoutX="282.0" layoutY="381.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="162.0" layoutX="282.0" layoutY="325.0" startX="-100.0" stroke="WHITE" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <effect>
+      <InnerShadow choke="0.46" color="#749ad7" height="40.0" radius="19.5" width="40.0" />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneCompanyCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="203.0" prefWidth="377.0" style="-fx-background-color: DarkCyan;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CategoryCardController">
+   <center>
+      <Pane prefHeight="175.0" prefWidth="185.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="companyName" layoutX="6.0" prefHeight="32.0" prefWidth="247.0" text="-------------------------------------" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="32.0" prefHeight="25.0" prefWidth="72.0" text="Addres:" textFill="#ddff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="companyAddress" layoutX="7.0" layoutY="57.0" prefHeight="25.0" prefWidth="247.0" text="-----------------------------------" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="84.0" prefHeight="32.0" prefWidth="73.0" text="Phone:" textFill="#e5ff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="companyPhone" layoutX="7.0" layoutY="116.0" prefHeight="25.0" prefWidth="245.0" text="-----------------------" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="140.0" prefHeight="32.0" prefWidth="73.0" text="Email:" textFill="#e1ff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="companyEmail" layoutX="7.0" layoutY="172.0" prefHeight="25.0" prefWidth="245.0" text="-------------------------------" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+   <effect>
+      <InnerShadow color="#56a6f2" />
+   </effect>
+   <left>
+      <VBox alignment="CENTER" prefHeight="203.0" prefWidth="116.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="companyImage" fitHeight="86.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/noCompany.JPG" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onMouseClicked="#getCompanyMedicines" prefHeight="17.0" prefWidth="105.0" style="-fx-background-color: CornflowerBlue;" text="View Medicines">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

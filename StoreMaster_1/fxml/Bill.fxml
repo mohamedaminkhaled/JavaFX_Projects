@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="BorderPaneBill" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="543.0" prefWidth="252.0" style="-fx-background-color: white; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BillController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="72.0" prefWidth="358.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#print" prefHeight="13.0" prefWidth="112.0" style="-fx-background-color: Brown;" text="Print" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox fx:id="hboxHead" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="299.0" style="-fx-background-color: BLACK;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#eb240a" onMouseClicked="#close" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <Pane fx:id="paneBillContent" prefHeight="186.0" prefWidth="361.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vboxContent" layoutX="1.0" layoutY="-1.0" prefHeight="435.0" prefWidth="250.0">
+               <children>
+                  <VBox fx:id="vboxBillContent" prefHeight="70.0" prefWidth="355.0" style="-fx-background-color: HoneyDew;">
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="348.0" spacing="5.0" style="-fx-background-color: LightGray;">
+                           <children>
+                              <Label prefHeight="29.0" prefWidth="135.0" text="اسم السلعه">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="55.0" text="الكميه">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="47.0" text="السعر">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="368.0" prefWidth="250.0">
+                     <children>
+                        <Label fx:id="total" layoutX="98.0" layoutY="58.0" prefHeight="17.0" prefWidth="140.0" text="000.00 EP">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="user" layoutX="101.0" layoutY="133.0" prefHeight="25.0" prefWidth="136.0" text=" محمد امين عبد العليم خالد">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="time" layoutX="99.0" layoutY="158.0" prefHeight="25.0" prefWidth="143.0" text="2020-06-25 21:28:26">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="billNumber" layoutX="102.0" layoutY="183.0" prefHeight="25.0" prefWidth="135.0" text="8574637475838">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="133.0" prefHeight="25.0" prefWidth="76.0" text="user:       ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="18.0" layoutY="58.0" prefHeight="17.0" prefWidth="80.0" text="Total:           ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="158.0" prefHeight="17.0" prefWidth="77.0" text="Time:      ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="183.0" prefHeight="25.0" prefWidth="75.0" text="Bill number:">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Line endX="35.0" layoutX="178.0" startX="-139.0" />
+                        <Label fx:id="lblDiscount" layoutX="100.0" layoutY="83.0" prefHeight="17.0" prefWidth="132.0" text="000.00 EP">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="83.0" prefHeight="17.0" prefWidth="78.0" text="Discount:">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblNewTotal" layoutX="100.0" layoutY="108.0" prefHeight="17.0" prefWidth="133.0" text="000.00 EP">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="108.0" prefHeight="17.0" prefWidth="74.0" text="New Total:">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="companyName" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="14.0" prefHeight="25.0" prefWidth="217.0" text="اسم المحل">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="88.0" layoutY="226.0" prefHeight="25.0" prefWidth="75.0" text="فاتورة بيع">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+   <effect>
+      <DropShadow />
+   </effect>
+</BorderPane>

@@ -1,0 +1,23 @@
+
+.root{
+	-fx-background-image:url('model_1.jpg');
+}
+
+#exit:hover{
+	-fx-text-fill: Black;
+	-fx-cursor:hand;
+}
+
+#btn_submit{
+	-fx-background-color:  #262626;
+}
+
+#btn_submit:hover{
+	-fx-background-color:  black;
+	-fx-cursor:hand;
+}
+
+#tf_username, #tf_passwoard{
+	-fx-background-color: transparent;
+	-fx-text-fill: white;
+}

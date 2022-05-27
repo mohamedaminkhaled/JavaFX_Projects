@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet submitWithdraw.css?>
+
+<AnchorPane prefHeight="313.0" prefWidth="582.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.SubmitDepositController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button layoutX="452.0" layoutY="95.0" mnemonicParsing="false" onAction="#controlSubmitDeposit" prefHeight="36.0" prefWidth="91.0" text="Submit" textFill="#216600">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Label fx:id="lblAmount" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="95.0" prefHeight="36.0" prefWidth="151.0" text="Enter amount:" textFill="#66edff">
+      <font>
+        <Font name="System Bold" size="22.0" />
+      </font>
+    </Label>
+    <Label fx:id="lblSuccessOrFailed" layoutX="203.0" layoutY="167.0" prefHeight="36.0" prefWidth="340.0" text="">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x3" />
+      </font>
+      <textFill>
+        <Color blue="0.584" green="0.200" red="1.000" fx:id="x2" />
+      </textFill>
+    </Label>
+    <TextField fx:id="tfAmnt" layoutX="203.0" layoutY="95.0" prefHeight="36.0" prefWidth="198.0" promptText="mor than $10" />
+    <Label fx:id="lblNewBalance" font="$x3" layoutX="203.0" layoutY="225.0" prefHeight="36.0" prefWidth="340.0" text="" textFill="$x2" />
+  </children>
+</AnchorPane>

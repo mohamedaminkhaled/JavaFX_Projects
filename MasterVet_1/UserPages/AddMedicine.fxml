@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="828.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PurchaseGoodController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="549.0" prefWidth="220.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="medicineImage" fitHeight="186.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/medicine1.jpg" />
+               </image></ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="233.0" textFill="#251936">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnImageChooser" mnemonicParsing="false" onMouseClicked="#openImageChooser" prefHeight="47.0" prefWidth="149.0" style="-fx-background-color: DarkSlateGray;" text="Chose picture" textFill="#e4dfee">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="510.0" prefWidth="532.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="57.0" prefHeight="42.0" prefWidth="135.0" text="Medicine ID" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfMedicineID" layoutX="250.0" layoutY="43.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="350.0" layoutY="84.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="215.0" layoutY="60.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="106.0" prefHeight="42.0" prefWidth="170.0" text="Medicine Name" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfMedicineName" layoutX="250.0" layoutY="92.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="350.0" layoutY="133.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="215.0" layoutY="110.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="153.0" prefHeight="42.0" prefWidth="135.0" text="Company" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfCompany" layoutX="250.0" layoutY="139.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="350.0" layoutY="180.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="215.0" layoutY="156.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="202.0" prefHeight="42.0" prefWidth="135.0" text="Batch" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfBatch" layoutX="250.0" layoutY="188.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="350.0" layoutY="229.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="215.0" layoutY="205.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="250.0" prefHeight="42.0" prefWidth="213.0" text="Date of Manufacture" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="229.0" layoutY="254.0" prefHeight="32.0" prefWidth="14.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="298.0" prefHeight="42.0" prefWidth="187.0" text="Date of Expiary" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="215.0" layoutY="301.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="347.0" prefHeight="42.0" prefWidth="135.0" text="Price" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPrice" layoutX="250.0" layoutY="333.0" prefHeight="41.0" prefWidth="188.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="87.0" layoutX="350.0" layoutY="374.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="215.0" layoutY="350.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="394.0" prefHeight="42.0" prefWidth="135.0" text="Quantity" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfQuantity" layoutX="250.0" layoutY="380.0" prefHeight="41.0" prefWidth="189.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="87.0" layoutX="350.0" layoutY="421.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="215.0" layoutY="397.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datepickerManufact" layoutX="249.0" layoutY="251.0" prefHeight="39.0" prefWidth="213.0" promptText="choose date" showWeekNumbers="true" style="-fx-background-color: #C0C0C0;" />
+            <DatePicker fx:id="datepickerExpire" layoutX="249.0" layoutY="298.0" prefHeight="39.0" prefWidth="213.0" promptText="choose date" showWeekNumbers="true" style="-fx-background-color: #C0C0C0;" />
+            <Button fx:id="btnCancel" layoutX="236.0" layoutY="471.0" mnemonicParsing="false" onMouseClicked="#cancelAddMedicine" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: Chocolate;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAdd" layoutX="344.0" layoutY="471.0" mnemonicParsing="false" onMouseClicked="#confirmAddMedicine" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: SteelBlue;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

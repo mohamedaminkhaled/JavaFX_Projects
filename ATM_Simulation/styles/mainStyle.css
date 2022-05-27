@@ -1,0 +1,18 @@
+
+.root{
+	-fx-background-color:rgb(51,104,101);
+}
+
+lblHello{
+	-fx-text-alignment: center ;
+}
+
+Button{
+	-fx-background-color: rgb(19,158,158);
+	-fx-text-fill: rgb(213,239,239);
+}
+
+TextField{
+	-fx-background-color: rgb(195,220,220);
+	-fx-font-size: 16px; 
+}

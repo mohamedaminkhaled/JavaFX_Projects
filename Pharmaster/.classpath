@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="D:/courses/development tooles/FX_ProjectPlugins/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/courses/development tooles/FX_ProjectPlugins/fontbox-2.0.8.jar"/>
+	<classpathentry kind="lib" path="D:/courses/development tooles/FX_ProjectPlugins/mysql-connector-java-8.0.18.jar"/>
+	<classpathentry kind="lib" path="D:/courses/development tooles/FX_ProjectPlugins/org.eclipse.fx.ide.css.jfx8_3.0.0.201705220750.jar"/>
+	<classpathentry kind="lib" path="D:/courses/development tooles/FX_ProjectPlugins/pdfbox-2.0.20.jar"/>
+	<classpathentry kind="lib" path="D:/courses/development tooles/FX_ProjectPlugins/workbenchfx-core-8.0.2.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

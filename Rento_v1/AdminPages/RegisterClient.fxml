@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="828.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterClientController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="563.0" prefWidth="294.0" spacing="70.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="idImage" fitHeight="71.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" scaleX="3.0" scaleY="2.0">
+               <image>
+                  <Image url="@../resources/no-image-found.png" />
+               </image></ImageView>
+            <Button fx:id="btnIdImage" mnemonicParsing="false" onMouseClicked="#openImageChooser" prefHeight="23.0" prefWidth="149.0" style="-fx-background-color: DarkSlateGray;" text="صورة البطاقه" textFill="#e4dfee">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <ImageView fx:id="licenseImage" fitHeight="72.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" scaleX="3.0" scaleY="2.0">
+               <image>
+                  <Image url="@../resources/no-image-found.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnLicenseImage" mnemonicParsing="false" onMouseClicked="#openImageChooser" prefHeight="23.0" prefWidth="149.0" style="-fx-background-color: DarkSlateGray;" text="صورة الرخصه" textFill="#e4dfee">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="294.0" spacing="20.0">
+               <children>
+                  <Button fx:id="dtnCancel" mnemonicParsing="false" onMouseClicked="#cancelRegisterClient" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: Chocolate;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnConfirm" mnemonicParsing="false" onMouseClicked="#confirmRegisterClient" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: SteelBlue;" text="Confirm" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="40.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="563.0" prefWidth="480.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="6.0" layoutY="19.0" prefHeight="42.0" prefWidth="82.0" text="الاسم" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfName" layoutX="144.0" layoutY="7.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="244.0" layoutY="48.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="109.0" layoutY="24.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="63.0" prefHeight="42.0" prefWidth="78.0" text="العنوان" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfAddress" layoutX="144.0" layoutY="49.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="244.0" layoutY="90.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="109.0" layoutY="67.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="-18.0" layoutY="189.0" prefHeight="42.0" prefWidth="108.0" text="رقم الموبايل" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPhone1" layoutX="146.0" layoutY="175.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="246.0" layoutY="216.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="111.0" layoutY="193.0" prefHeight="32.0" prefWidth="28.0" text="1 :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPhone2" layoutX="146.0" layoutY="218.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="246.0" layoutY="259.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="111.0" layoutY="236.0" prefHeight="32.0" prefWidth="28.0" text="2 :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPhone3" layoutX="148.0" layoutY="260.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="248.0" layoutY="301.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="113.0" layoutY="278.0" prefHeight="32.0" prefWidth="28.0" text="3 :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPhone4" layoutX="148.0" layoutY="302.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="248.0" layoutY="343.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="113.0" layoutY="320.0" prefHeight="32.0" prefWidth="28.0" text="4 :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePickerExit" layoutX="149.0" layoutY="420.0" prefHeight="43.0" prefWidth="161.0" promptText="اختر تاريخ" style="fx-font-size: 20;" />
+            <ComboBox fx:id="comboCars" layoutX="148.0" layoutY="365.0" prefHeight="36.0" prefWidth="330.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="13.0" layoutY="368.0" prefHeight="42.0" prefWidth="73.0" text="السياره" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="-7.0" layoutY="423.0" prefHeight="42.0" prefWidth="93.0" text="يوم الخروج" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="-6.0" layoutY="484.0" prefHeight="42.0" prefWidth="96.0" text="يوم الرجوع" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="484.0" layoutY="421.0" prefHeight="42.0" prefWidth="43.0" text="الساعه:" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="-64.0" layoutX="540.0" layoutY="445.0" startX="-84.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="404.0" layoutY="421.0" prefHeight="42.0" prefWidth="41.0" text="الدقيقه:" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="-64.0" layoutX="459.0" layoutY="446.0" startX="-84.0" />
+            <TextField fx:id="tfHoursExit" alignment="BOTTOM_CENTER" layoutX="447.0" layoutY="425.0" prefHeight="17.0" prefWidth="38.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="-1.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="tfMinExit" alignment="BOTTOM_CENTER" layoutX="366.0" layoutY="425.0" prefHeight="17.0" prefWidth="38.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="-1.0" />
+               </padding>
+            </TextField>
+            <VBox alignment="CENTER" layoutX="343.0" layoutY="418.0" prefHeight="47.0" prefWidth="23.0" spacing="5.0">
+               <children>
+                  <RadioButton fx:id="exitAM" mnemonicParsing="false" prefHeight="17.0" prefWidth="9.0">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="exitTimeGrup" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="exitPM" mnemonicParsing="false" prefHeight="17.0" prefWidth="9.0" toggleGroup="$exitTimeGrup" />
+               </children>
+            </VBox>
+            <Label alignment="CENTER_RIGHT" layoutX="315.0" layoutY="425.0" prefHeight="13.0" prefWidth="21.0" text="ص" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="315.0" layoutY="444.0" prefHeight="13.0" prefWidth="21.0" text="م" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePickerReturn" layoutX="147.0" layoutY="484.0" prefHeight="43.0" prefWidth="161.0" promptText="اختر تاريخ" style="fx-font-size: 20;" />
+            <Label alignment="CENTER_RIGHT" layoutX="482.0" layoutY="485.0" prefHeight="42.0" prefWidth="43.0" text="الساعه:" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="-64.0" layoutX="538.0" layoutY="509.0" startX="-84.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="402.0" layoutY="485.0" prefHeight="42.0" prefWidth="41.0" text="الدقيقه:" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="-64.0" layoutX="457.0" layoutY="510.0" startX="-84.0" />
+            <TextField fx:id="tfHoursReturn" alignment="BOTTOM_CENTER" layoutX="445.0" layoutY="489.0" prefHeight="17.0" prefWidth="38.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="-1.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="tfMinReturn" alignment="BOTTOM_CENTER" layoutX="364.0" layoutY="489.0" prefHeight="17.0" prefWidth="38.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="-1.0" />
+               </padding>
+            </TextField>
+            <VBox alignment="CENTER" layoutX="341.0" layoutY="482.0" prefHeight="47.0" prefWidth="23.0" spacing="5.0">
+               <children>
+                  <RadioButton fx:id="returnAM" mnemonicParsing="false" prefHeight="17.0" prefWidth="9.0">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="exitTimeGrup1" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="returnPM" mnemonicParsing="false" prefHeight="17.0" prefWidth="9.0" toggleGroup="$exitTimeGrup1" />
+               </children>
+            </VBox>
+            <Label alignment="CENTER_RIGHT" layoutX="313.0" layoutY="489.0" prefHeight="13.0" prefWidth="21.0" text="ص" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="313.0" layoutY="508.0" prefHeight="13.0" prefWidth="21.0" text="م" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="155.0" layoutY="553.0" prefHeight="42.0" prefWidth="104.0" text="المبلغ المتبقى :" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="372.0" layoutY="554.0" prefHeight="42.0" prefWidth="109.0" text="المبلغ المدفوع :" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="-64.0" layoutX="427.0" layoutY="585.0" startX="-108.0" />
+            <TextField fx:id="amntpayed" alignment="BOTTOM_CENTER" layoutX="312.0" layoutY="564.0" prefHeight="19.0" prefWidth="60.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="-1.0" />
+               </padding>
+            </TextField>
+            <Label alignment="CENTER_RIGHT" layoutX="284.0" layoutY="564.0" prefHeight="23.0" prefWidth="21.0" text="ج" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="-64.0" layoutX="212.0" layoutY="583.0" startX="-108.0" />
+            <TextField fx:id="amntRest" alignment="BOTTOM_CENTER" layoutX="97.0" layoutY="562.0" prefHeight="19.0" prefWidth="60.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="-1.0" />
+               </padding>
+            </TextField>
+            <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="562.0" prefHeight="23.0" prefWidth="21.0" text="ج" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="8.0" layoutY="105.0" prefHeight="42.0" prefWidth="78.0" text="رقم البطاقه" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfIdNumber" layoutX="142.0" layoutY="91.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="242.0" layoutY="132.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="107.0" layoutY="109.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="1.0" layoutY="147.0" prefHeight="42.0" prefWidth="85.0" text="رقم الرخصه" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfLicenseNumber" layoutX="142.0" layoutY="133.0" prefHeight="41.0" prefWidth="317.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="227.0" layoutX="242.0" layoutY="174.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="107.0" layoutY="151.0" prefHeight="32.0" prefWidth="28.0" text=":">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

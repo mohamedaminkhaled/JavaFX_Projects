@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="BorderPaneMedicineCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0" prefWidth="324.0" style="-fx-background-color: DarkSlateGrey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ItemCardController">
+   <effect>
+      <DropShadow color="#45515b" />
+   </effect>
+   <right>
+      <VBox fx:id="vboxEditItem" prefHeight="35.0" prefWidth="30.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fx:id="iconDelete" fill="#bf1f0a" onMouseClicked="#deleteItem" radius="12.0" stroke="#800c0c" strokeType="INSIDE" />
+            <ImageView fx:id="iconEdit" fitHeight="20.0" fitWidth="26.0" onMouseClicked="#editItem" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/edit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iconAdd" fitHeight="20.0" fitWidth="23.0" onMouseClicked="#addStock" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/add2.JPG" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="29.0" prefWidth="338.0" style="-fx-background-color: #4e6969;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="quantity" alignment="CENTER" prefHeight="20.0" prefWidth="64.0" text="230" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="36.0" text="كميه:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="sold" alignment="CENTER" prefHeight="20.0" prefWidth="68.0" text="15000" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="48.0" text="مبيعات:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="discount" alignment="CENTER" prefHeight="20.0" prefWidth="44.0" text="35" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="price11" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="1.0" text="/" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="price" alignment="CENTER" prefHeight="20.0" prefWidth="51.0" text="350" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="43.0" text="السعر:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Pane onMouseClicked="#showBarcode" prefHeight="105.0" prefWidth="280.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="itemName" alignment="CENTER" layoutX="10.0" layoutY="6.0" prefHeight="59.0" prefWidth="275.0" text="اسم العنصر" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="itemId" alignment="CENTER" layoutX="10.0" layoutY="67.0" prefHeight="24.0" prefWidth="274.0" text="Barcode" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

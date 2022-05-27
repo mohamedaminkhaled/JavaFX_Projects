@@ -1,0 +1,23 @@
+
+.root{
+	-fx-background-image:url('blue_back.jpg');
+}
+
+#exit:hover{
+	-fx-text-fill: DeepSkyBlue;
+	-fx-cursor:hand;
+}
+
+#btn_submit{
+	-fx-background-color:  #262626;
+}
+
+#btn_submit:hover{
+	-fx-background-color:  black;
+	-fx-cursor:hand;
+}
+
+#tf_username, #tf_passwoard{
+	-fx-background-color: transparent;
+	-fx-text-fill: white;
+}

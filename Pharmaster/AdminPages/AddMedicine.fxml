@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderAddMedicine" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddItemController">
+   <center>
+      <Pane prefHeight="510.0" prefWidth="532.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="125.0" layoutY="33.0" text="Barcode" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfMedicineID" layoutX="223.0" layoutY="25.0" prefHeight="37.0" prefWidth="297.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="193.0" layoutX="323.0" layoutY="54.0" startX="-100.0" />
+            <Label layoutX="144.0" layoutY="70.0" text="Name" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfMedicineName" layoutX="223.0" layoutY="66.0" prefHeight="37.0" prefWidth="297.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="194.0" layoutX="323.0" layoutY="96.0" startX="-100.0" />
+            <Label layoutX="113.0" layoutY="120.0" text="Company" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="145.0" layoutY="312.0" text="Batch" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="206.0" text="Date of Manufacture" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="257.0" text="Date of Expiary" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="445.0" text="Quantity details" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfStripsDetails" layoutX="382.0" layoutY="449.0" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Line endX="-68.0" layoutX="495.0" layoutY="469.0" startX="-107.0" />
+            <Label layoutX="116.0" layoutY="401.0" text="Quantity" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datepickerManufact" layoutX="222.0" layoutY="201.0" prefHeight="39.0" prefWidth="213.0" promptText="choose date" showWeekNumbers="true" style="-fx-background-color: #C0C0C0; -fx-font-size: 16;">
+               <effect>
+                  <InnerShadow color="#c3baba" />
+               </effect></DatePicker>
+            <DatePicker fx:id="datepickerExpire" layoutX="222.0" layoutY="252.0" prefHeight="39.0" prefWidth="213.0" promptText="choose date" showWeekNumbers="true" style="-fx-background-color: #C0C0C0; -fx-font-size: 16;">
+               <effect>
+                  <InnerShadow color="#bfb6b6" />
+               </effect></DatePicker>
+            <Button fx:id="btnCancel" layoutX="404.0" layoutY="578.0" mnemonicParsing="false" onMouseClicked="#cancelAddMedicine" prefHeight="12.0" prefWidth="82.0" style="-fx-background-color: Chocolate;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAdd" layoutX="311.0" layoutY="578.0" mnemonicParsing="false" onMouseClicked="#confirmAddMedicine" prefHeight="8.0" prefWidth="70.0" style="-fx-background-color: SteelBlue;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="124.0" layoutY="167.0" text="Supplier" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboSupplierNames" layoutX="223.0" layoutY="163.0" prefHeight="37.0" prefWidth="298.0" promptText="Choose Supplier" style="-fx-font-size: 16;">
+               <effect>
+                  <InnerShadow color="#b8adad" />
+               </effect>
+            </ComboBox>
+            <ComboBox fx:id="comboCompanyNames" layoutX="223.0" layoutY="116.0" onAction="#setSuppliers" prefHeight="37.0" prefWidth="298.0" promptText="Choose Company" style="-fx-font-size: 16;">
+               <effect>
+                  <InnerShadow color="#b8adad" />
+               </effect>
+            </ComboBox>
+            <Button layoutX="214.0" layoutY="578.0" mnemonicParsing="false" onMouseClicked="#confirmBuyMedicine" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: Crimson;" text="Buy" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="datepickerBatch" layoutX="222.0" layoutY="303.0" prefHeight="39.0" prefWidth="213.0" promptText="choose date" showWeekNumbers="true" style="-fx-background-color: #C0C0C0; -fx-font-size: 16;">
+               <effect>
+                  <InnerShadow color="#bfb6b6" />
+               </effect>
+            </DatePicker>
+            <Label layoutX="154.0" layoutY="361.0" text="Type" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="336.0" layoutY="441.0" prefHeight="42.0" prefWidth="46.0" text="Stripes" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfUnitDetails" layoutX="468.0" layoutY="447.0" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Line endX="-68.0" layoutX="585.0" layoutY="469.0" startX="-110.0" />
+            <Label layoutX="439.0" layoutY="442.0" prefHeight="42.0" prefWidth="36.0" text="Units" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfStripes" layoutX="380.0" layoutY="405.0" prefHeight="26.0" prefWidth="59.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Line endX="-66.0" layoutX="495.0" layoutY="427.0" startX="-110.0" />
+            <Label layoutX="336.0" layoutY="399.0" prefHeight="42.0" prefWidth="46.0" text="Stripes" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfUnits" layoutX="469.0" layoutY="406.0" prefHeight="25.0" prefWidth="54.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Line endX="-68.0" layoutX="585.0" layoutY="427.0" startX="-110.0" />
+            <Label layoutX="439.0" layoutY="400.0" prefHeight="42.0" prefWidth="36.0" text="Units" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfBoxes" layoutX="259.0" layoutY="402.0" prefHeight="28.0" prefWidth="77.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Line endX="-49.0" layoutX="376.0" layoutY="425.0" startX="-108.0" />
+            <Label layoutX="223.0" layoutY="397.0" prefHeight="42.0" prefWidth="41.0" text="Boxes" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="223.0" layoutY="440.0" prefHeight="42.0" prefWidth="104.0" text="Box content :" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="485.0" text="Price" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPrice" layoutX="217.0" layoutY="475.0" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="-19.0" layoutX="317.0" layoutY="506.0" startX="-100.0" />
+            <ComboBox fx:id="comboType" layoutX="222.0" layoutY="357.0" prefHeight="37.0" prefWidth="181.0" promptText="Choose Type" style="-fx-font-size: 16;">
+               <effect>
+                  <InnerShadow color="#b8adad" />
+               </effect>
+            </ComboBox>
+            <ImageView fx:id="medicineImage" fitHeight="62.0" fitWidth="69.0" layoutX="86.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/medicine1.jpg" />
+               </image></ImageView>
+            <Button fx:id="btnImageChooser" layoutX="65.0" layoutY="585.0" mnemonicParsing="false" onMouseClicked="#openImageChooser" prefHeight="19.0" prefWidth="112.0" style="-fx-background-color: DarkSlateGray;" text="Chose picture" textFill="#e4dfee">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="344.0" layoutY="484.0" prefHeight="30.0" prefWidth="141.0" text="Purchase Price" textFill="#0a0114">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPurchasePrice" layoutX="497.0" layoutY="475.0" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="-19.0" layoutX="597.0" layoutY="506.0" startX="-100.0" />
+         </children>
+      </Pane>
+   </center>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="360.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

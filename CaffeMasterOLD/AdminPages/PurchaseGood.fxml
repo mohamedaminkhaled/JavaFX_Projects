@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderAddMedicine" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PurchaseGoodController">
+   <center>
+      <Pane prefHeight="510.0" prefWidth="532.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="59.0" layoutY="142.0" prefHeight="30.0" prefWidth="145.0" text="اسم البضاعه" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfName" layoutX="225.0" layoutY="134.0" prefHeight="37.0" prefWidth="297.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="193.0" layoutX="325.0" layoutY="163.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="198.0" prefHeight="30.0" prefWidth="140.0" text="اسم المورد" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfSupplier" layoutX="223.0" layoutY="194.0" prefHeight="37.0" prefWidth="297.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="194.0" layoutX="323.0" layoutY="224.0" startX="-100.0" />
+            <Button fx:id="btnCancel" layoutX="345.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#cancelAddMedicine" prefHeight="12.0" prefWidth="82.0" style="-fx-background-color: Chocolate;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="223.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#confirmBuyMedicine" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: Crimson;" text="Buy" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="258.0" prefHeight="30.0" prefWidth="140.0" text="الكميه" textFill="#0a0114">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfQuantity" layoutX="223.0" layoutY="254.0" prefHeight="37.0" prefWidth="297.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="194.0" layoutX="323.0" layoutY="284.0" startX="-100.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="324.0" prefHeight="30.0" prefWidth="140.0" text="السعر" textFill="#c61f0c">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPrice" layoutX="223.0" layoutY="320.0" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #C0C0C0;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="-6.0" layoutX="323.0" layoutY="350.0" startX="-100.0" />
+         </children>
+      </Pane>
+   </center>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="360.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

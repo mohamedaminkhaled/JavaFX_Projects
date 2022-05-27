@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneCompanyCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="384.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SupplierCardController">
+   <center>
+      <Pane prefHeight="175.0" prefWidth="185.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="supplierName" alignment="CENTER" layoutX="11.0" prefHeight="32.0" prefWidth="252.0" text="محمد امين عبد العليم خالد" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="74.0" prefHeight="25.0" prefWidth="72.0" text="Addres:" textFill="#ddff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="supplierAddress" layoutX="10.0" layoutY="99.0" prefHeight="25.0" prefWidth="251.0" text="البحيره - ابو حمص - بلقطر الشرقيه - كدوة السبيل" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="124.0" prefHeight="32.0" prefWidth="73.0" text="Phone:" textFill="#e5ff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="supplierPhone" layoutX="10.0" layoutY="156.0" prefHeight="25.0" prefWidth="232.0" text="010001716800" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="181.0" prefHeight="32.0" prefWidth="73.0" text="Email:" textFill="#e1ff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="supplierEmail" layoutX="10.0" layoutY="213.0" prefHeight="25.0" prefWidth="245.0" text="supplier_name@example.com" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="24.0" prefHeight="25.0" prefWidth="99.0" text="Company:" textFill="#ddff00">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="companyName" layoutX="10.0" layoutY="49.0" prefHeight="25.0" prefWidth="249.0" text="Loooong company name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+   <effect>
+      <InnerShadow choke="0.16" color="#979ca1" height="40.0" radius="19.5" width="40.0" />
+   </effect>
+   <left>
+      <VBox alignment="CENTER" prefHeight="245.0" prefWidth="113.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="supplierImage" fitHeight="97.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/avatar2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

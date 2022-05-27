@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="203.0" prefWidth="598.0" style="-fx-background-color: #ebebe0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EnterKeyController">
+   <bottom>
+      <Button mnemonicParsing="false" onMouseClicked="#registerKey" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #d7d7c1;" text="OK" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="598.0" style="-fx-background-color: BLACK;" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
+         <children>
+            <Circle fill="#e11a08" onMouseClicked="#close" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label text="." textFill="RED" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" right="10.0" top="5.0" />
+         </padding>
+      </HBox>
+   </top>
+   <effect>
+      <DropShadow />
+   </effect>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="598.0" spacing="10.0">
+               <children>
+                  <Label text="Enter key for serial: ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSerial" prefHeight="30.0" prefWidth="165.0" text="0000" textFill="#c31a1a">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="598.0" spacing="10.0">
+               <children>
+                  <Label text="Key:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfKey" prefHeight="19.0" prefWidth="266.0" promptText="Enter key">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

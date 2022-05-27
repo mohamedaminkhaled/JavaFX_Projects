@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="BorderPaneMedicineCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="191.0" prefWidth="347.0" style="-fx-background-color: #5F9EA0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SalesCardController">
+   <left>
+      <StackPane prefHeight="200.0" prefWidth="149.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="medicineImage" fitHeight="112.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/medicine1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+   </left>
+   <center>
+      <Pane prefHeight="191.0" prefWidth="243.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="medicineName" layoutY="35.0" prefHeight="25.0" prefWidth="204.0" text="Medicine name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="104.0" prefHeight="27.0" prefWidth="54.0" text="Price:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="medicinePrice" layoutX="61.0" layoutY="104.0" prefHeight="27.0" prefWidth="153.0" text="\$Price:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="69.0" prefHeight="27.0" prefWidth="118.0" text="Quantity Sold:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="quantitySold" layoutX="122.0" layoutY="69.0" prefHeight="27.0" prefWidth="74.0" text="quantity">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="139.0" prefHeight="27.0" prefWidth="50.0" text="Sales:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="medicineSales" layoutX="61.0" layoutY="139.0" prefHeight="27.0" prefWidth="157.0" text="\$sales">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

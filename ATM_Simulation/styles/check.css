@@ -1,0 +1,10 @@
+
+.root{
+	-fx-background-color:rgb(51,104,101);
+}
+
+TextArea{
+	-fx-background-color: rgb(207,219,230);
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+}
